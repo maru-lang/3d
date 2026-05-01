@@ -1,0 +1,242 @@
+ <!DOCTYPE html>
+  <html lang="en">                                                                                                        <head>
+      <meta charset="UTF-8">                                                                                                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Honey Sales Landing Page</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <div class="container">
+          <div class="header">
+              <h1>Honey Sales</h1>
+              <p>Sweet and natural, straight from the hive</p>
+          </div>
+          <div class="hero">
+              <div class="honey-jar">
+                  <div class="jar">
+                      <div class="lid"></div>
+                      <div class="honey"></div>
+                  </div>
+                  <div class="label">
+                      <h2>Our Honey</h2>
+                      <p>Organic and delicious, perfect for your breakfast table</p>
+                  </div>
+              </div>
+          </div>
+          <div class="features">
+              <div class="feature">
+                  <h3>Quality Guaranteed</h3>
+                  <p>We ensure the highest quality honey, straight from our beehives</p>
+              </div>
+              <div class="feature">
+                  <h3>Sustainable Practices</h3>
+                  <p>We prioritize environmentally friendly practices in our beekeeping</p>
+              </div>
+              <div class="feature">
+                  <h3>Support Local Bees</h3>
+                  <p>By buying our honey, you're supporting local beekeepers and the local economy</p>
+              </div>
+          </div>
+          <div class="call-to-action">
+              <button>Buy Now</button>
+          </div>
+      </div>
+      <script src="script.js"></script>
+  </body>
+  </html>
+
+  And here is an example of CSS code in styles.css file to style the HTML and add 3D effects and modern animation:
+
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+  }
+
+  .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+  }
+
+  .header p {
+      font-size: 18px;
+      color: #666;
+  }
+
+  .hero {
+      position: relative;
+      height: 300px;
+      margin-bottom: 20px;
+  }
+
+  .honey-jar {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      perspective: 1000px;
+  }
+
+  .jar {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .jar .lid {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      animation: lid-animation 2s infinite;
+  }
+
+  .jar .honey {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      background-color: #ffd700;
+      border-radius: 50%;
+  }
+
+  .label {
+      position: absolute;
+      top: 220px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+  }
+
+  .label h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+
+  .label p {
+      font-size: 18px;
+      color: #666;
+  }
+
+  .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+  }
+
+  .feature {
+      margin: 20px;
+      text-align: center;
+  }
+
+  .feature h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+
+  .feature p {
+      font-size: 14px;
+      color: #666;
+  }
+
+  .call-to-action {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .call-to-action button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .call-to-action button:hover {
+      background-color: #3e8e41;
+  }
+
+  @keyframes lid-animation {
+      0% {
+          transform: translateX(-50%) rotate(0deg);
+      }
+      100% {
+          transform: translateX(-50%) rotate(360deg);
+      }
+  }
+
+  /* Modern animation */
+  .hero {
+      animation: hero-animation 10s infinite;
+  }
+
+  @keyframes hero-animation {
+      0% {
+          transform: translateX(0);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+
+  .features {
+      animation: features-animation 10s infinite;
+  }
+
+  @keyframes features-animation {
+      0% {
+          transform: translateX(0);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+
+  .call-to-action {
+      animation: call-to-action-animation 10s infinite;
+  }
+
+  @keyframes call-to-action-animation {
+      0% {
+          transform: translateX(0);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+
+  /* 3D effects */
+  .jar {
+      transform-style: preserve-3d;
+      transition: transform 1s;
+  }
+
+  .jar:hover {
+      transform: rotateY(360deg);
+  }
